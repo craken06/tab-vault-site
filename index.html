@@ -24,7 +24,7 @@
         <a class="btn primary" href="#install" data-store="chrome">Add to Chrome</a>
         <a class="btn" href="#install" data-store="firefox">Add to Firefox</a>
       </div>
-      <p class="small">Free to start. Pro from US$4/month or US$19 once.</p>
+      <p class="small">Free to start. Pro US$19 once (or US$4/month).</p>
     </div>
     <img src="img/2-timeline-diff.png" alt="Tab Vault timeline showing two snapshots and the tabs added and removed between them" width="1280" height="800">
   </div>
@@ -46,6 +46,9 @@
       <div class="card"><h3>Trackers stripped</h3><p><code>utm_*</code>, <code>fbclid</code>, <code>gclid</code> and friends are removed from links before anything is saved.</p></div>
       <div class="card"><h3>Sites you never want saved</h3><p>Exclude your bank, email or health portal. Incognito windows are never saved at all.</p></div>
       <div class="card"><h3>Early warning on data loss</h3><p>Tab Vault checks its own data. If it suddenly drops or can't be read, you get a red alert and the last good copy.</p></div>
+      <div class="card"><h3>Locked collections</h3><p>Encrypt a saved list with a passphrase. Anyone opening your browser sees only "Locked collection" — no name, no links. <span class="badge">PRO</span></p></div>
+      <div class="card"><h3>Less clutter</h3><p>Close duplicate tabs in one click, add the current tab to any list, keyboard shortcuts for everything, tab groups in Chrome <em>and</em> Firefox.</p></div>
+      <div class="card"><h3>Forget on a schedule</h3><p>Auto-delete snapshots older than a day, a week or a month, and optionally store URLs without page titles.</p></div>
       <div class="card"><h3>Delete everything, one click</h3><p>Wipe every snapshot, list and key from the browser whenever you want. No "request deletion" emails — there's no copy on our side.</p></div>
     </div>
   </section>
@@ -66,19 +69,19 @@
       <div class="card">
         <h3>Free</h3>
         <div class="price">$0</div>
-        <p>Last 5 snapshots · unlimited collections · tracker stripping · excluded sites · import from OneTab, Session Buddy, Tab Session Manager · manual export · data-loss alert</p>
+        <p>Last 5 snapshots · unlimited collections · tab groups · tracker stripping · excluded sites · auto-delete · duplicate cleanup · shortcuts · import from OneTab, Session Buddy, Tab Session Manager · manual export · data-loss alert</p>
+      </div>
+      <div class="card" style="border:2px solid var(--accent)">
+        <h3>Pro lifetime <span class="badge">BEST VALUE</span></h3>
+        <div class="price">$19<span class="small"> once</span></div>
+        <p><strong>Pays for itself in under 5 months.</strong> Every Pro feature — today's and every future one — with no renewals, no account, nothing to cancel. Up to 3 devices. 14-day refund.</p>
+        <p style="margin-top:14px"><a class="btn primary" href="#checkout" data-checkout="lifetime">Buy once</a></p>
       </div>
       <div class="card">
         <h3>Pro monthly</h3>
         <div class="price">$4<span class="small">/month</span></div>
-        <p>Everything in Free + 30 recent snapshots and 1 per day for 30 days · encrypted backups · scheduled export · compare versions · search all history · guided restore. Cancel anytime; your data stays.</p>
-        <p style="margin-top:14px"><a class="btn primary" href="#checkout" data-checkout="monthly">Subscribe</a></p>
-      </div>
-      <div class="card">
-        <h3>Pro lifetime <span class="badge">ONE-TIME</span></h3>
-        <div class="price">$19</div>
-        <p>All Pro features, paid once. Up to 3 devices. 14-day refund.</p>
-        <p style="margin-top:14px"><a class="btn" href="#checkout" data-checkout="lifetime">Buy once</a></p>
+        <p>Same Pro features: 30 recent snapshots + 1 per day for 30 days · encrypted backups · locked collections · scheduled export · compare versions · search all history · guided restore. Cancel anytime; your data stays.</p>
+        <p style="margin-top:14px"><a class="btn" href="#checkout" data-checkout="monthly">Subscribe</a></p>
       </div>
     </div>
   </section>
@@ -88,6 +91,8 @@
     <details><summary>Is it really anonymous?</summary><p>Using Tab Vault is: there's no account, no analytics and your tabs never leave your browser. Paying is not fully anonymous — our payment provider, Polar, needs an email and a card like any store, and we can see that email for receipts and refunds. That's all we can see, and it's never linked to your browsing because your browsing never reaches us.</p></details>
     <details><summary>What does the extension send over the network?</summary><p>Free: nothing. Pro: once a day, your license key and a random device label (like "Tab Vault device 3fa91c") to Polar to check the license is valid. Never URLs, titles or sessions. <a href="privacy.html">Privacy policy</a>.</p></details>
     <details><summary>Will I never lose tabs again?</summary><p>No software can promise that. Tab Vault keeps several versions, a second copy in separate storage, optional backup files outside the browser and an alert when data suddenly drops.</p></details>
+    <details><summary>Monthly or lifetime?</summary><p>Same features. Lifetime costs as much as under 5 months of the monthly plan, includes every future Pro feature and never renews — that's the one we recommend. Monthly is there if you just want to try Pro for a while.</p></details>
+    <details><summary>Is there cloud sync?</summary><p>Not built in, on purpose: sync means a server holding your tabs. Instead, put the encrypted automatic backup in any folder you already sync (Drive, Dropbox, Syncthing) and import it on your other computer. Nobody but you can read it.</p></details>
     <details><summary>What happens if I cancel the monthly plan?</summary><p>Nothing is deleted. Tab Vault goes back to Free limits for future snapshots, and everything you already have stays.</p></details>
     <details><summary>How do I move from OneTab or Session Buddy?</summary><p>Export from your current extension and import into Tab Vault — free in every plan. <a href="guides/migrate-to-tab-vault.html">Migration guide</a>.</p></details>
     <details><summary>Does it work in Firefox?</summary><p>Yes. Tab groups are a Chrome feature and are skipped in Firefox; everything else works the same.</p></details>
