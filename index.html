@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tab Vault — versioned, local backups of your browser tabs</title>
-  <meta name="description" content="Automatic, versioned snapshots of your tabs, saved lists, export to a file and an alert when your saved tabs suddenly disappear. 100% local. Imports OneTab, Session Buddy and Tab Session Manager.">
+  <title>Tab Vault — private, local backups of your browser tabs</title>
+  <meta name="description" content="Versioned snapshots of your tabs, tab groups and saved lists, encrypted backups and an alert when your tabs disappear. No account, no server, no tracking. The product is the extension, not you.">
   <link rel="icon" href="img/icon-48.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="alternate" hreflang="es" href="es/">
@@ -12,42 +12,51 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="logo" href="./"><img src="img/icon-48.png" width="28" height="28" alt="">Tab Vault</a>
-  <nav><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="guides/">Guides</a><a href="es/">Español</a></nav>
+  <nav><a href="#why">Why paid</a><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="guides/">Guides</a><a href="es/">Español</a></nav>
 </div></header>
 
 <main class="wrap">
   <div class="hero">
     <div>
-      <h1>A safety net for your tabs.</h1>
-      <p class="lead">Tab Vault keeps versioned snapshots of every window, copies them outside the browser, and warns you the moment your saved tabs suddenly shrink.</p>
+      <h1>Your tabs are nobody's business.</h1>
+      <p class="lead">Tab Vault keeps versioned snapshots of your windows, tab groups and saved lists — and keeps them on your machine. No account. No server. No tracking. Nothing about you ever reaches us.</p>
       <div class="btns">
-        <a class="btn primary" href="#install" data-store="chrome">Add to Chrome — free</a>
+        <a class="btn primary" href="#install" data-store="chrome">Add to Chrome</a>
         <a class="btn" href="#install" data-store="firefox">Add to Firefox</a>
       </div>
-      <p class="small">No account. No server. No analytics. Import from OneTab, Session Buddy and Tab Session Manager for free.</p>
+      <p class="small">Free to start. Pro from US$2/month or US$19 once.</p>
     </div>
     <img src="img/2-timeline-diff.png" alt="Tab Vault timeline showing two snapshots and the tabs added and removed between them" width="1280" height="800">
   </div>
 
-  <section id="features">
-    <h2>Built for the day something goes wrong</h2>
+  <section id="why">
+    <h2>The product is the extension, not you</h2>
     <div class="grid3">
-      <div class="card"><h3>Versions, not one list</h3><p>Automatic snapshots every few minutes, on tab close and at browser start. Restore a whole session, one window or a single tab.</p></div>
-      <div class="card"><h3>A copy outside the browser</h3><p>Export to JSON or HTML anytime. Pro writes a backup file to your Downloads folder on a schedule.</p></div>
-      <div class="card"><h3>Early warning</h3><p>Tab Vault checks its own data. If it suddenly drops or can't be read, you get a red alert and the last good copy.</p></div>
-      <div class="card"><h3>Saved lists</h3><p>Send a window to a named collection and close it to free memory. Rename, move tabs, restore all or one.</p></div>
-      <div class="card"><h3>Light restore</h3><p>Reopened tabs stay unloaded until you click them, so restoring hundreds of tabs doesn't freeze your machine.</p></div>
-      <div class="card"><h3>Free migration</h3><p>Paste your OneTab export or pick a Session Buddy / Tab Session Manager file. Nothing is overwritten.</p></div>
+      <div class="card"><h3>Free usually means you pay with data</h3><p>Someone has to pay for "free" tools. Very often it's advertisers, data brokers or investors betting on what they'll learn about you.</p></div>
+      <div class="card"><h3>We can't sell what we never see</h3><p>Tab Vault has no server and no account. Your URLs, titles and sessions stay in your browser, so there is nothing about you to sell, leak or hand over.</p></div>
+      <div class="card"><h3>So we charge for the software</h3><p>A small monthly fee or a one-time purchase pays for development. That's the whole business model — and why it has to cost money.</p></div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Privacy and safety, built in</h2>
+    <div class="grid3">
+      <div class="card"><h3>Versions, not one list</h3><p>Automatic snapshots every few minutes, on tab close and at browser start, with tab groups. Restore a session, a window or a single tab.</p></div>
+      <div class="card"><h3>Encrypted backups</h3><p>Export a backup locked with AES-256 and your passphrase, manually or on a schedule. Safe to keep in a cloud drive or on a USB stick. <span class="badge">PRO</span></p></div>
+      <div class="card"><h3>Trackers stripped</h3><p><code>utm_*</code>, <code>fbclid</code>, <code>gclid</code> and friends are removed from links before anything is saved.</p></div>
+      <div class="card"><h3>Sites you never want saved</h3><p>Exclude your bank, email or health portal. Incognito windows are never saved at all.</p></div>
+      <div class="card"><h3>Early warning on data loss</h3><p>Tab Vault checks its own data. If it suddenly drops or can't be read, you get a red alert and the last good copy.</p></div>
+      <div class="card"><h3>Delete everything, one click</h3><p>Wipe every snapshot, list and key from the browser whenever you want. No "request deletion" emails — there's no copy on our side.</p></div>
     </div>
   </section>
 
   <section>
     <h2>See it</h2>
     <div class="shots">
+      <img src="img/6-privacy.png" alt="Privacy settings: tracker stripping and excluded sites" loading="lazy" width="1280" height="800">
       <img src="img/1-collections.png" alt="Collections list" loading="lazy" width="1280" height="800">
       <img src="img/5-guard.png" alt="Data-loss alert with restore options" loading="lazy" width="1280" height="800">
       <img src="img/3-import.png" alt="Import preview for a Session Buddy file" loading="lazy" width="1280" height="800">
-      <img src="img/4-search.png" alt="Search across collections and history" loading="lazy" width="1280" height="800">
     </div>
   </section>
 
@@ -57,29 +66,31 @@
       <div class="card">
         <h3>Free</h3>
         <div class="price">$0</div>
-        <p>Last 5 snapshots · unlimited collections · all importers · manual export · data-loss alert · search in collections</p>
+        <p>Last 5 snapshots · unlimited collections · tracker stripping · excluded sites · import from OneTab, Session Buddy, Tab Session Manager · manual export · data-loss alert</p>
       </div>
       <div class="card">
-        <h3>Pro <span class="badge">ONE-TIME</span></h3>
+        <h3>Pro monthly</h3>
+        <div class="price">$2<span class="small">/month</span></div>
+        <p>Everything in Free + 30 recent snapshots and 1 per day for 30 days · encrypted backups · scheduled export · compare versions · search all history · guided restore. Cancel anytime; your data stays.</p>
+        <p style="margin-top:14px"><a class="btn primary" href="#checkout" data-checkout="monthly">Subscribe</a></p>
+      </div>
+      <div class="card">
+        <h3>Pro lifetime <span class="badge">ONE-TIME</span></h3>
         <div class="price">$19</div>
-        <p>30 recent snapshots + 1 per day for 30 days · scheduled export to a file · compare versions · search all history · guided restore · up to 3 devices</p>
-        <p style="margin-top:14px"><a class="btn primary" href="#checkout" data-checkout>Get Pro</a></p>
-      </div>
-      <div class="card">
-        <h3>Why one-time?</h3>
-        <p>There is no server to pay for: your data never leaves your browser. If Pro ever ends, nothing is deleted. 14-day refund.</p>
+        <p>All Pro features, paid once. Up to 3 devices. 14-day refund.</p>
+        <p style="margin-top:14px"><a class="btn" href="#checkout" data-checkout="lifetime">Buy once</a></p>
       </div>
     </div>
   </section>
 
   <section id="faq">
     <h2>FAQ</h2>
-    <details><summary>Will I never lose tabs again?</summary><p>No software can promise that. Tab Vault keeps several versions, a second copy in a separate storage area, optional export files outside the browser, and an alert when data suddenly drops. Keep an exported copy of anything important.</p></details>
-    <details><summary>Does it upload my tabs?</summary><p>No. There is no server or account. The only network request is the Pro license check, which sends your key — never URLs or titles. <a href="privacy.html">Privacy policy</a>.</p></details>
-    <details><summary>How do I move from OneTab or Session Buddy?</summary><p>Export from your current extension and import into Tab Vault. Step by step: <a href="guides/migrate-to-tab-vault.html">migration guide</a>.</p></details>
-    <details><summary>Does it work in Firefox?</summary><p>Yes. Tab groups are a Chrome feature, so they're skipped in Firefox; everything else works the same.</p></details>
-    <details><summary>What happens if I uninstall it?</summary><p>The browser deletes the extension's storage. Export first (Import / Export → Download JSON). Tabs that Tab Vault restored are normal tabs and stay open.</p></details>
-    <details><summary>Does it save incognito tabs?</summary><p>Never.</p></details>
+    <details><summary>Is it really anonymous?</summary><p>Using Tab Vault is: there's no account, no analytics and your tabs never leave your browser. Paying is not fully anonymous — our payment provider, Polar, needs an email and a card like any store, and we can see that email for receipts and refunds. That's all we can see, and it's never linked to your browsing because your browsing never reaches us.</p></details>
+    <details><summary>What does the extension send over the network?</summary><p>Free: nothing. Pro: once a day, your license key and a random device label (like "Tab Vault device 3fa91c") to Polar to check the license is valid. Never URLs, titles or sessions. <a href="privacy.html">Privacy policy</a>.</p></details>
+    <details><summary>Will I never lose tabs again?</summary><p>No software can promise that. Tab Vault keeps several versions, a second copy in separate storage, optional backup files outside the browser and an alert when data suddenly drops.</p></details>
+    <details><summary>What happens if I cancel the monthly plan?</summary><p>Nothing is deleted. Tab Vault goes back to Free limits for future snapshots, and everything you already have stays.</p></details>
+    <details><summary>How do I move from OneTab or Session Buddy?</summary><p>Export from your current extension and import into Tab Vault — free in every plan. <a href="guides/migrate-to-tab-vault.html">Migration guide</a>.</p></details>
+    <details><summary>Does it work in Firefox?</summary><p>Yes. Tab groups are a Chrome feature and are skipped in Firefox; everything else works the same.</p></details>
   </section>
 </main>
 
@@ -87,10 +98,10 @@
   <span>© 2026 Tab Vault</span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="guides/">Guides</a>
 </div></footer>
 <script>
-  // Fill these in once the store listings and Polar checkout exist.
-  const LINKS = { chrome: '', firefox: '', checkout: '' };
+  // Fill these in once the store listings and Polar checkouts exist.
+  const LINKS = { chrome: '', firefox: '', monthly: '', lifetime: '' };
   document.querySelectorAll('[data-store]').forEach((a) => { const u = LINKS[a.dataset.store]; if (u) a.href = u; });
-  document.querySelectorAll('[data-checkout]').forEach((a) => { if (LINKS.checkout) a.href = LINKS.checkout; });
+  document.querySelectorAll('[data-checkout]').forEach((a) => { const u = LINKS[a.dataset.checkout]; if (u) a.href = u; });
 </script>
 </body>
 </html>
