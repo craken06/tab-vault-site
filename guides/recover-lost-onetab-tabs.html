@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to recover lost OneTab tabs (step by step) — Tab Vault</title>
+  <meta name="description" content="Your OneTab list is empty after a restart or update? What to do first, where your tabs may still be, and how to avoid it next time.">
+  <link rel="icon" href="../img/icon-48.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="../"><img src="../img/icon-48.png" width="28" height="28" alt="">Tab Vault</a>
+  <nav><a href="../#features">Features</a><a href="../#pricing">Pricing</a><a href="../guides/">Guides</a><a href="../support.html">Support</a></nav>
+</div></header>
+<main class="wrap">
+<article class="doc">
+<h1>How to recover lost OneTab tabs</h1>
+<p class="small">Updated 2026-10-12 · Applies to Chrome, Edge, Brave and Firefox</p>
+<p>Users have reported OneTab lists disappearing after a reboot or an update. OneTab keeps its list inside the browser's storage for the extension, so when that storage is lost or reset, the list goes with it. There is no guaranteed fix, but these steps give you the best chance, in order of risk.</p>
+
+<h2>1. Stop and don't make it worse</h2>
+<ul>
+<li><strong>Don't uninstall or reinstall OneTab.</strong> Removing an extension deletes its stored data.</li>
+<li><strong>Don't clear browsing data</strong> or run "cleaner" apps until you're done.</li>
+<li>If you can, close the browser and <strong>copy your whole browser profile folder</strong> somewhere safe before trying anything else. In Chrome/Edge/Brave, its path is shown as <em>Profile Path</em> at <code>chrome://version</code>; in Firefox, at <code>about:profiles</code>.</li>
+</ul>
+
+<h2>2. Look for an export you already have</h2>
+<p>OneTab's <em>Export / Import URLs</em> page gives you your list as text (<code>URL | Title</code> per line). Search your notes, documents and email for a pasted copy: search for "<code> | </code>" together with a site you remember.</p>
+
+<h2>3. Rebuild from browser history</h2>
+<p>Tabs you sent to OneTab were usually visited first, so they're in your history unless you cleared it. Open <code>chrome://history</code> (or <em>Library → History</em> in Firefox), go to the dates you collected them, and search by site or keyword.</p>
+
+<h2>4. Firefox only: session backups</h2>
+<p>Firefox keeps recent session files in the <code>sessionstore-backups</code> folder of your profile (<code>recovery.jsonlz4</code>, <code>previous.jsonlz4</code>, <code>upgrade.jsonlz4-…</code>). They contain the tabs that were <em>open</em> at those times — useful if you sent tabs to OneTab recently. They're compressed; Tab Session Manager can import them (Settings → Import), which lets you browse the tabs.</p>
+
+<h2>5. Restore an older copy of the profile</h2>
+<p>If you have system backups (Windows <em>File History</em> / "Previous versions", macOS Time Machine), you can restore the profile folder from before the loss:</p>
+<ol>
+<li>Close the browser completely.</li>
+<li>Keep the copy you made in step 1.</li>
+<li>Restore the older version of the <strong>entire</strong> profile folder (not just one subfolder: we couldn't verify the exact subfolder OneTab uses in 2026, and extension data spans several).</li>
+<li>Open the browser and check OneTab. Export immediately if your list is back.</li>
+</ol>
+<p class="note">Restoring a profile also rolls back bookmarks, passwords and history to that date. If that matters, restore it into a <em>separate</em> folder and open it as a new profile instead.</p>
+
+<h2>6. Ask OneTab's developer</h2>
+<p>Contact OneTab through its official site with your browser version and what happened.</p>
+
+<h2>Next time: keep versions and a copy outside the browser</h2>
+<p>Whatever tool you use, export regularly to a file. That's why we built <a href="../">Tab Vault</a>: it keeps versioned snapshots, writes backup files outside the browser (Pro), and warns you when saved data suddenly drops. It imports your OneTab export for free — see the <a href="migrate-to-tab-vault.html">migration guide</a>.</p>
+</article>
+
+</main>
+<footer><div class="wrap">
+  <span>© 2026 Tab Vault</span><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../support.html">Support</a><a href="../guides/">Guides</a>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tab Vault — versioned, local backups of your browser tabs</title>
+  <meta name="description" content="Automatic, versioned snapshots of your tabs, saved lists, export to a file and an alert when your saved tabs suddenly disappear. 100% local. Imports OneTab, Session Buddy and Tab Session Manager.">
+  <link rel="icon" href="img/icon-48.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="es" href="es/">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><img src="img/icon-48.png" width="28" height="28" alt="">Tab Vault</a>
+  <nav><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="guides/">Guides</a><a href="es/">Español</a></nav>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1>A safety net for your tabs.</h1>
+      <p class="lead">Tab Vault keeps versioned snapshots of every window, copies them outside the browser, and warns you the moment your saved tabs suddenly shrink.</p>
+      <div class="btns">
+        <a class="btn primary" href="#install" data-store="chrome">Add to Chrome — free</a>
+        <a class="btn" href="#install" data-store="firefox">Add to Firefox</a>
+      </div>
+      <p class="small">No account. No server. No analytics. Import from OneTab, Session Buddy and Tab Session Manager for free.</p>
+    </div>
+    <img src="img/2-timeline-diff.png" alt="Tab Vault timeline showing two snapshots and the tabs added and removed between them" width="1280" height="800">
+  </div>
+
+  <section id="features">
+    <h2>Built for the day something goes wrong</h2>
+    <div class="grid3">
+      <div class="card"><h3>Versions, not one list</h3><p>Automatic snapshots every few minutes, on tab close and at browser start. Restore a whole session, one window or a single tab.</p></div>
+      <div class="card"><h3>A copy outside the browser</h3><p>Export to JSON or HTML anytime. Pro writes a backup file to your Downloads folder on a schedule.</p></div>
+      <div class="card"><h3>Early warning</h3><p>Tab Vault checks its own data. If it suddenly drops or can't be read, you get a red alert and the last good copy.</p></div>
+      <div class="card"><h3>Saved lists</h3><p>Send a window to a named collection and close it to free memory. Rename, move tabs, restore all or one.</p></div>
+      <div class="card"><h3>Light restore</h3><p>Reopened tabs stay unloaded until you click them, so restoring hundreds of tabs doesn't freeze your machine.</p></div>
+      <div class="card"><h3>Free migration</h3><p>Paste your OneTab export or pick a Session Buddy / Tab Session Manager file. Nothing is overwritten.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>See it</h2>
+    <div class="shots">
+      <img src="img/1-collections.png" alt="Collections list" loading="lazy" width="1280" height="800">
+      <img src="img/5-guard.png" alt="Data-loss alert with restore options" loading="lazy" width="1280" height="800">
+      <img src="img/3-import.png" alt="Import preview for a Session Buddy file" loading="lazy" width="1280" height="800">
+      <img src="img/4-search.png" alt="Search across collections and history" loading="lazy" width="1280" height="800">
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="grid3">
+      <div class="card">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <p>Last 5 snapshots · unlimited collections · all importers · manual export · data-loss alert · search in collections</p>
+      </div>
+      <div class="card">
+        <h3>Pro <span class="badge">ONE-TIME</span></h3>
+        <div class="price">$19</div>
+        <p>30 recent snapshots + 1 per day for 30 days · scheduled export to a file · compare versions · search all history · guided restore · up to 3 devices</p>
+        <p style="margin-top:14px"><a class="btn primary" href="#checkout" data-checkout>Get Pro</a></p>
+      </div>
+      <div class="card">
+        <h3>Why one-time?</h3>
+        <p>There is no server to pay for: your data never leaves your browser. If Pro ever ends, nothing is deleted. 14-day refund.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <details><summary>Will I never lose tabs again?</summary><p>No software can promise that. Tab Vault keeps several versions, a second copy in a separate storage area, optional export files outside the browser, and an alert when data suddenly drops. Keep an exported copy of anything important.</p></details>
+    <details><summary>Does it upload my tabs?</summary><p>No. There is no server or account. The only network request is the Pro license check, which sends your key — never URLs or titles. <a href="privacy.html">Privacy policy</a>.</p></details>
+    <details><summary>How do I move from OneTab or Session Buddy?</summary><p>Export from your current extension and import into Tab Vault. Step by step: <a href="guides/migrate-to-tab-vault.html">migration guide</a>.</p></details>
+    <details><summary>Does it work in Firefox?</summary><p>Yes. Tab groups are a Chrome feature, so they're skipped in Firefox; everything else works the same.</p></details>
+    <details><summary>What happens if I uninstall it?</summary><p>The browser deletes the extension's storage. Export first (Import / Export → Download JSON). Tabs that Tab Vault restored are normal tabs and stay open.</p></details>
+    <details><summary>Does it save incognito tabs?</summary><p>Never.</p></details>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Tab Vault</span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="guides/">Guides</a>
+</div></footer>
+<script>
+  // Fill these in once the store listings and Polar checkout exist.
+  const LINKS = { chrome: '', firefox: '', checkout: '' };
+  document.querySelectorAll('[data-store]').forEach((a) => { const u = LINKS[a.dataset.store]; if (u) a.href = u; });
+  document.querySelectorAll('[data-checkout]').forEach((a) => { if (LINKS.checkout) a.href = LINKS.checkout; });
+</script>
+</body>
+</html>

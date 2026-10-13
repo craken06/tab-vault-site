@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cómo recuperar pestañas perdidas de OneTab — Tab Vault</title>
+  <meta name="description" content="¿Tu lista de OneTab quedó vacía tras reiniciar o actualizar? Qué hacer primero, dónde pueden seguir tus pestañas y cómo evitarlo.">
+  <link rel="icon" href="../img/icon-48.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="../es/"><img src="../img/icon-48.png" width="28" height="28" alt="">Tab Vault</a>
+  <nav><a href="../es/#funciones">Funciones</a><a href="../es/#precios">Precios</a><a href="../guides/">Guías</a><a href="../">English</a></nav>
+</div></header>
+<main class="wrap">
+<article class="doc">
+<h1>Cómo recuperar pestañas perdidas de OneTab</h1>
+<p class="small">Actualizado 12/10/2026 · Chrome, Edge, Brave y Firefox</p>
+<p>Hay usuarios que reportan que su lista de OneTab desapareció tras reiniciar o actualizar. OneTab guarda la lista dentro del almacenamiento del navegador para la extensión; si ese almacenamiento se pierde o se reinicia, la lista se va con él. No hay arreglo garantizado, pero estos pasos te dan la mejor chance, de menor a mayor riesgo.</p>
+
+<h2>1. Pará y no lo empeores</h2>
+<ul>
+<li><strong>No desinstales ni reinstales OneTab:</strong> quitar una extensión borra sus datos.</li>
+<li><strong>No borres datos de navegación</strong> ni uses "limpiadores" hasta terminar.</li>
+<li>Si podés, cerrá el navegador y <strong>copiá la carpeta de perfil completa</strong> a otro lado. En Chrome/Edge/Brave la ruta aparece como <em>Ruta del perfil</em> en <code>chrome://version</code>; en Firefox, en <code>about:profiles</code>.</li>
+</ul>
+
+<h2>2. Buscá un export que ya tengas</h2>
+<p>La página <em>Export / Import URLs</em> de OneTab da la lista como texto (<code>URL | Título</code> por línea). Buscá en notas, documentos y mails una copia pegada.</p>
+
+<h2>3. Reconstruí desde el historial</h2>
+<p>Las pestañas que mandaste a OneTab normalmente las visitaste antes, así que están en el historial si no lo borraste: <code>chrome://history</code> (o <em>Biblioteca → Historial</em> en Firefox). Filtrá por fecha y sitio.</p>
+
+<h2>4. Solo Firefox: backups de sesión</h2>
+<p>Firefox guarda sesiones recientes en la carpeta <code>sessionstore-backups</code> del perfil (<code>recovery.jsonlz4</code>, <code>previous.jsonlz4</code>, <code>upgrade.jsonlz4-…</code>). Tienen las pestañas que estaban <em>abiertas</em> en ese momento. Están comprimidos; Tab Session Manager los puede importar para verlos.</p>
+
+<h2>5. Restaurá una copia vieja del perfil</h2>
+<p>Si tenés backups del sistema (Historial de archivos / "Versiones anteriores" de Windows, Time Machine en macOS): cerrá el navegador, conservá la copia del paso 1 y restaurá la versión anterior de la carpeta de perfil <strong>completa</strong> (no una subcarpeta: no pudimos verificar qué subcarpeta exacta usa OneTab en 2026). Si vuelve la lista, exportala enseguida.</p>
+<p class="note">Restaurar el perfil también vuelve atrás marcadores, contraseñas e historial. Si eso importa, restauralo en una carpeta <em>aparte</em> y abrilo como otro perfil.</p>
+
+<h2>La próxima: versiones y una copia fuera del navegador</h2>
+<p>Uses lo que uses, exportá a un archivo seguido. Para eso hicimos <a href="../es/">Tab Vault</a>: snapshots versionados, backups en archivo fuera del navegador (Pro) y alerta si los datos caen de golpe. Importa tu export de OneTab gratis.</p>
+</article>
+
+</main>
+<footer><div class="wrap">
+  <span>© 2026 Tab Vault</span><a href="../privacy.html">Privacidad</a><a href="../terms.html">Términos</a><a href="../support.html">Soporte</a><a href="../guides/">Guías</a>
+</div></footer>
+</body>
+</html>
